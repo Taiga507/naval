@@ -25,7 +25,7 @@ $(document).ready(function(){
             data: $(this).serialize()
         }).done(function() {
             $(this).find("input").val("");
-            $('#consultation').fadeOut();
+            $('#consultation, .feedform').fadeOut();
             $('.overlay, #thanks').fadeIn('slow');
 
             $('form').trigger('reset');
@@ -33,10 +33,33 @@ $(document).ready(function(){
         return false;
     });
 
-    $('.owl-carousel').owlCarousel({
+    $('.slide-one').owlCarousel({
         speed:1200,
         loop:true,
         margin:46,
+        nav:true,
+        navText: ["<img src='icons/arrow_left_r.svg'>", "<img src='icons/arrow_right_r.svg'>"],
+        dots:false,
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoWidth: 387,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1400:{
+                items:2
+            }
+        }
+    })
+
+    $('.slide-two').owlCarousel({
+        speed:1200,
+        loop:true,
+        margin:50,
         nav:true,
         navText: ["<img src='icons/arrow_left_r.svg'>", "<img src='icons/arrow_right_r.svg'>"],
         dots:false,
@@ -51,11 +74,10 @@ $(document).ready(function(){
                 items:2
             },
             1400:{
-                items:2
+                items:3
             }
         }
     })
-
 
     $('.zoom-gallery').magnificPopup({
 		delegate: 'a',

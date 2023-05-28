@@ -20,7 +20,7 @@
     }
 }
 
-.owl-carousel .owl-stage-outer {
+.slide-one .owl-stage-outer {
     position: relative;
     width: 910px;
     margin: 0 auto;
@@ -30,28 +30,16 @@
 	top: 50%;
 	transform: translateY(-50%);
 	left: 90px;
-	border: none;
-	background-color: #fff;
-	span {
-		display: block;
-		padding: 50px 31px 0 0;
-		font-size: 0;
-	}
 }
 .owl-next {
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 	right: 90px;
-	span {
-		display: block;
-		padding: 50px 31px 0 0;
-		font-size: 0;
-	}
 }
 .owl-carousel .owl-nav .owl-prev:hover {
     background: transparent;
-    background-image: url(../icons/arrow_left.svg);
+    background: url(../icons/arrow_left.svg);
 }
 .owl-carousel .owl-nav .owl-next:hover {
     background: transparent;

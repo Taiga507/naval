@@ -1,7 +1,14 @@
 .contacts {
     width: 1440px;
-    height: 935px;
-    margin: 0 auto;
+    height: 669px;
+    margin: 117px auto 70px;
+    .container {
+        width: 1240px;
+        margin: 0 auto;
+        display: grid;
+        grid-template: 670px / 605px 605px;
+        column-gap: 30px;
+    }
     &__divider {
         width: 147px;
         height: 5px;
@@ -14,18 +21,11 @@
     &__item {
         display: grid;
         grid-template-columns: 24px auto;
-        row-gap: 5px;
+        column-gap: 5px;
         padding-bottom: 20px;
         img {
             place-self: center start;
         }
-    }
-    .container {
-        padding: 145px 28px 120px 28px;
-        margin: 0 auto;
-        display: grid;
-        grid-template: 670px / 617px 617px;
-        column-gap: 30px;
     }
     &__map {
         padding-left: 5px;

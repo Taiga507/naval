@@ -15,12 +15,13 @@
         position: relative;
         width: 216px;
         height: 50px;
-        background: #454545;
+        background: $main-color;
         box-shadow: none;
         &:hover {
-            background: $main-color;
-            color: #454545;
+            background: $second-color;
+            color: #fff;
             transition: 0.5s all;
+            text-decoration: underline;
         }
     }
 }
@@ -35,6 +36,11 @@
     opacity: 0.8;
     border: none;
     border-radius: 10px;
+    &:hover {
+        background: $second-color;
+        text-decoration: underline;
+        transition: 0.5s all;
+    }
 }
 .modal__button-consultation {
     display: flex;
@@ -45,4 +51,9 @@
     background: $main-color;
     border-radius: 5px;
     border: none;
+    &:hover {
+        background: $second-color;
+        text-decoration: underline;
+        transition: 0.5s all;
+    }
 }
